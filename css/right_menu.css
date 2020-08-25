@@ -1,0 +1,110 @@
+.right_menu {
+  padding-top: 100px;
+}
+.right_menu img {
+  display: inline-block;
+  width: 50px;
+}
+.right_menu h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.right_menu .proposal {
+  color: #ababaa;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.right_menu .right_user {
+  position: relative;
+}
+.right_menu .right_user:after {
+  position: absolute;
+  content: "2";
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 50%;
+  background-color: #ffc23f;
+  text-align: center;
+  top: 100%;
+  left: 100%;
+  transform: translate(-80%, -50%);
+}
+.right_menu .active_proposal_element {
+  position: relative;
+  border: 1px solid silver;
+}
+.right_menu .active_proposal_element:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: calc(100%);
+  background-color: white;
+  /*border-top: 1px solid silver;
+  border-bottom: 1px solid silver;*/
+  transform: translateX(-100%);
+}
+.right_menu .active_proposal_element:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 2px;
+  height: calc(100% + 2px);
+  background-color: #ffc23f;
+}
+.right_menu .proposal_element {
+  transform: translateX(-25px);
+  padding-left: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.right_menu .proposal_element i {
+  color: #878787;
+  font-size: 1.2rem;
+}
+.right_menu .proposal_element .proposal_content {
+  font-weight: 700;
+  color: black;
+}
+.right_menu .fa-pen {
+  font-size: 1rem !important;
+  color: black !important;
+}
+.right_menu .border_bottom {
+  position: relative;
+}
+.right_menu .border_bottom:after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 1px;
+  background-color: #bcb8b6;
+  bottom: 0;
+  left: 15%;
+}
+.right_menu .message {
+  width: 60%;
+}
+.right_menu .round {
+  width: 60px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+  height: 60px;
+  border-radius: 50%;
+  padding: 4px 6px;
+  background-color: #ffc23f;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.right_menu .round:hover {
+  background-color: #feac2e;
+}
+.right_menu .round i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

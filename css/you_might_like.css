@@ -1,0 +1,107 @@
+.you_might_like {
+  padding-top: 40px;
+  background-color: #f9f9f9;
+}
+.you_might_like .desc .sub {
+  font-size: 0.9rem;
+  color: #ababaa;
+  font-weight: 500;
+}
+.you_might_like .desc .arrow {
+  margin-top: 80px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.you_might_like .desc .arrow:hover {
+  border-color: black;
+}
+.you_might_like .desc .arrow i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+}
+.you_might_like .product_card {
+  position: relative;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.you_might_like .product_card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 100000;
+}
+.you_might_like .product_card img {
+  width: 100%;
+  height: 230px;
+  margin-left: 12.5%;
+}
+.you_might_like .product_card .cost {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 100;
+}
+.you_might_like .product_card .cost:after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  top: 60%;
+  left: 20%;
+  z-index: -1;
+  background-color: #ffe7b8;
+}
+.you_might_like .product_card .sub {
+  font-size: 0.9rem;
+  color: #ababaa;
+  font-weight: 500;
+}
+.you_might_like .product_button {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  transform: translate(0, 50%);
+  border: none !important;
+  outline: none !important;
+  font-weight: 500;
+  padding: 5px 16px;
+  padding-right: 6px;
+  border-radius: 25px;
+  background-color: #ffc23f;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.you_might_like .product_button:hover {
+  background-color: #ffab2f;
+}
+.you_might_like .product_button .plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media (max-width: 992px) {
+  .product_card img {
+    width: 60% !important;
+    margin-left: 20% !important;
+    height: 400px !important;
+  }
+}
+@media (max-width: 620px) {
+  .product_card img {
+    width: 80% !important;
+    margin-left: 10% !important;
+    height: 250px !important;
+  }
+}

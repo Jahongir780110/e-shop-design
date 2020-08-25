@@ -1,0 +1,8 @@
+p, h1, h2, h3, h4, h5, h6, hr, input {
+  margin: 0 !important;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
