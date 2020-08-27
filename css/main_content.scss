@@ -44,11 +44,17 @@
 		border-radius: 50%;
 		font-size: 1.1rem;
 		font-weight: 500;
-		display: flex;
-		padding-left: 8px;
+		/*padding-left: 8px;*/
 		transition: all 0.3s ease;
 		&:hover{
 			background-color:#f4f2f4;
+		}
+		.fplus{
+			position: absolute;
+
+			top: 47%;
+			left: 48%;
+			transform: translate(-50%, -50%);
 		}
 	}
 	&:after{
